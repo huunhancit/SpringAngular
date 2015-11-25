@@ -1,6 +1,0 @@
-com\tma\spm\services\ProductService.class
-com\tma\spm\SpringAngularApplication.class
-com\tma\spm\model\Product.class
-com\tma\spm\controller\IndexController.class
-com\tma\spm\dao\ProductDAO.class
-com\tma\spm\controller\ProductController.class
