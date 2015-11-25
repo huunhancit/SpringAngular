@@ -14,6 +14,7 @@ app.controller('AppController', function($scope, $http) {
 		$http.post("/product", product).success(function(data, status) {
 			console.log(status);
 			$scope.loadAll();
+			$scope.product = {};
 		});
 		
 	}
