@@ -3,13 +3,13 @@ spring:
         name: SpringAngular
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/acuity
+        url: jdbc:mysql://localhost:3306/spm
         username: root
         password: root
     jpa:
       database-platform: org.hibernate.dialect.MySQL5Dialect
-      hibernate:
-        ddl-auto: create-drop
+#      hibernate:
+#        ddl-auto: create-drop
       show-sql: true
 server:
     port: 8080
