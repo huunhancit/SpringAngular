@@ -14,7 +14,7 @@ app.controller('AppController', function($scope, $http) {
 		$http.post("/product", product).success(function(data, status) {
 			console.log(status);
 			$scope.loadAll();
-			$scope.product = {};
+			$scope.clear();
 		});
 		
 	}
@@ -37,7 +37,11 @@ app.controller('AppController', function($scope, $http) {
 			console.log(data);
 			$('#editProduct').modal('hide');
 			$scope.loadAll();
-			$scope.product = {};
+			$scope.clear();
 		});
+	}
+	
+	$scope.clear = function (){
+		$scope.product = {id : null, name : null, description : null};
 	}
 });
