@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SPM Demo</title>
+</head>
+<body ng-app="App">
+	<div class="container" ng-controller="AppController">
+		<div class="panel panel-primary">
+			<div class="panel-heading" align="center">Demo SPM</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading" align="left">Product Form</div>
+							<div class="panel-body">
+								<div class="form-group">
+									<label for="usr">Product Name :</label> <input type="text"
+										class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="pwd">Description:</label> <input type="text"
+										class="form-control">
+								</div>
+								<div align="right">
+									<button type="button" class="btn btn-primary">Add
+										Product</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading" align="left">List Product</div>
+							<div class="panel-body">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Product</th>
+											<th>Description</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="product in products">
+											<td>{{product.id}}</td>
+											<td>{{product.name}}</td>
+											<td>{{product.description}}</td>
+											<td>Doe</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
